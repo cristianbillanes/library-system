@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="30dp"
+    android:paddingTop="80dp"
+    tools:context=".AddBook">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/add_book_title"
+                android:hint="Title"
+                android:inputType="textPersonName"
+                style="@style/editext"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/add_book_Author"
+                android:hint="Author"
+                android:inputType="textPersonName"
+                style="@style/editext"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/add_book_ISBN"
+                android:hint="ISBN"
+                android:inputType="textPersonName"
+                style="@style/editext"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/Add_Purch_Date"
+                android:text="Purch Date"
+                style="@style/textview2"/>
+            <Button
+                android:onClick="btn_add_purchDate"
+                android:text="Purch Date"
+                style="@style/button2"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/Add_Publish_Year"
+                android:text="Publish Year"
+                style="@style/textview2"/>
+            <Button
+                android:onClick="btn_add_publishYear"
+                android:id="@+id/Btn_add_Publish_Year"
+                android:text="Publish Year"
+                style="@style/button2"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <ProgressBar
+            android:id="@+id/addbook_progressbar"
+            style="@style/progressbar"/>
+        <Button
+            android:id="@+id/ADD_Book"
+            android:onClick="AddBook_AddBook"
+            android:layout_marginTop="30dp"
+            android:text="ADD"
+            style="@style/button2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:onClick="AddBook_GOTO_HOME"
+            android:id="@+id/add_Home"
+            style="@style/button_slide"
+            android:layout_weight="1"
+            android:text="Home" />
+
+        <Button
+            android:onClick="AddBook_View_BOOK"
+            style="@style/button_slide"
+            android:layout_weight="1"
+            android:text="Book" />
+
+        <Button
+            style="@style/button_slide"
+            android:layout_weight="1"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/Scan"
+            style="@style/button_slide"
+            android:layout_weight="1"
+            android:text="Scan" />
+
+    </LinearLayout>
+</RelativeLayout>

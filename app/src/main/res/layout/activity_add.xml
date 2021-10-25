@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="50dp"
+        android:orientation="vertical">
+        <Button
+            android:onClick="Add_book"
+            android:id="@+id/btn_add_book"
+            android:text="Add Boook"
+            style="@style/button2"/>
+        <Button
+            android:onClick="Add_borrower"
+            android:id="@+id/btn_add_borrower"
+            android:layout_marginTop="30dp"
+            android:text="Add Borrower"
+            style="@style/button2"/>
+        <Button
+            android:onClick="Add_borrowedbook"
+            android:id="@+id/btn_add_borrowedbook"
+            android:layout_marginTop="30dp"
+            android:text="Add Borrowed book"
+            style="@style/button2"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:onClick="ADD_HOME"
+            android:id="@+id/Home"
+            style="@style/button_slide"
+            android:layout_weight="1"
+            android:text="Home" />
+
+        <Button
+            android:onClick="ADD_VIEW"
+            style="@style/button_slide"
+            android:layout_weight="1"
+            android:text="View" />
+
+        <Button
+            style="@style/button_slide"
+            android:layout_weight="1"
+            android:text="Add" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorPrimary2"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".EditProfile">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edit_name"
+            android:hint="Edit Name"
+            android:inputType="textPersonName"
+            style="@style/profile_editext"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edit_email"
+            android:hint="Edit Email"
+            android:inputType="textEmailAddress"
+            style="@style/profile_editext"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true">
+        <EditText
+            android:id="@+id/edit_password"
+            android:hint="Password"
+            android:inputType="textPassword"
+            style="@style/profile_editext"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <ProgressBar
+        android:id="@+id/edit_progressbar"
+        style="@style/progressbar"/>
+    <Button
+        android:onClick="Save_Edit_profile"
+        android:layout_marginTop="30dp"
+        android:text="Save"
+        style="@style/profile_button"/>
+    <Button
+        android:onClick="Cancel_Edit"
+        android:text="Cancle"
+        style="@style/profile_button"/>
+</LinearLayout>

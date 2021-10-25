@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginHorizontal="10dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    tools:context=".Borrower_View">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="ID: "
+                    style="@style/textview3"/>
+                <TextView
+                    android:text="Firstname: "
+                    style="@style/textview3"/>
+                <TextView
+                    android:text="Middlename: "
+                    style="@style/textview3"/>
+                <TextView
+                    android:text="Lastname: "
+                    style="@style/textview3"/>
+                <TextView
+                    android:text="Contact Number: "
+                    style="@style/textview3"/>
+                <TextView
+                    android:text="Email: "
+                    style="@style/textview3"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/borrower_view_id"
+                    android:text="id "
+                    style="@style/textview4"/>
+                <TextView
+                    android:id="@+id/borrower_view_fname"
+                    android:text="fname "
+                    style="@style/textview4"/>
+                <TextView
+                    android:id="@+id/borrower_view_mname"
+                    android:text="mname "
+                    style="@style/textview4"/>
+                <TextView
+                    android:id="@+id/borrower_view_lname"
+                    android:text="lname "
+                    style="@style/textview4"/>
+                <TextView
+                    android:id="@+id/borrower_view_contact"
+                    android:text="contact "
+                    style="@style/textview4"/>
+                <TextView
+                    android:id="@+id/borrower_view_email"
+                    android:text="email "
+                    style="@style/textview4"/>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:onClick="borrower_view_to_edit"
+            android:id="@+id/edit_Book"
+            android:layout_marginTop="30dp"
+            android:text="Edit"
+            style="@style/button2"/>
+        <Button
+            android:onClick="borrower_view_delete"
+            android:id="@+id/edit_delete"
+            android:layout_marginTop="5dp"
+            android:text="Delete"
+            style="@style/button2"/>
+        <Button
+            android:onClick="borrower_view_back"
+            android:id="@+id/edit_Back"
+            android:layout_marginTop="5dp"
+            android:text="Back"
+            style="@style/button2"/>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.librarysystem">
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LibrarySystem"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Search"></activity>
+        <activity android:name=".Add" />
+        <activity android:name=".BorrowedBook_Edit" />
+        <activity android:name=".Borrower_edit" />
+        <activity android:name=".Book_Edit" />
+        <activity android:name=".Borrowedbook_view" />
+        <activity android:name=".Borrower_View" />
+        <activity android:name=".Book_View" />
+        <activity android:name=".BorrowedBook_Add" />
+        <activity android:name=".Borrower_Add" />
+        <activity android:name=".Book_Add" />
+        <activity android:name=".EditBook" />
+        <activity android:name=".ViewBook" />
+        <activity android:name=".AddBook" />
+        <activity
+            android:name=".EditProfile"
+            android:theme="@style/AppThemeRegister" />
+        <activity android:name=".Profile" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".Register"
+            android:theme="@style/AppThemeRegister" />
+        <activity android:name=".Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

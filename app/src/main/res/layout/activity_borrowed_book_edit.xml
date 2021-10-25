@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="30dp"
+    android:paddingTop="20dp"
+    android:layout_marginTop="10dp"
+    tools:context=".BorrowedBook_Edit">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Book ID:"
+                style="@style/textview3"/>
+            <TextView
+                android:id="@+id/txt_bookid"
+                android:text="bookid"
+                style="@style/textview4"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Borrower ID:"
+                style="@style/textview3"/>
+            <TextView
+                android:id="@+id/txt_borrowerid"
+                android:text="borrowerid"
+                style="@style/textview4"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Max Avilable: "
+                style="@style/textview3"/>
+            <TextView
+                android:id="@+id/txtAvilable"
+                android:text="quanity "
+                style="@style/textview4"/>
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edit_borrowedbook_numcopies"
+                android:hint="Number of copies"
+                android:inputType="textPersonName"
+                style="@style/editext"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edit_borrowedbook_bstatus"
+                android:hint="Status"
+                android:inputType="textPersonName"
+                style="@style/editext"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/edit_date_barrowed"
+                android:text="date barrowed"
+                style="@style/textview2"/>
+            <Button
+                android:onClick="btn_DateBorrowed"
+                android:id="@+id/Btn_date_barrowed"
+                android:text="Date Barrowed"
+                style="@style/button2"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/edit_duedate"
+                android:text="duedate"
+                style="@style/textview2"/>
+            <Button
+                android:onClick="btn_Duedate"
+                android:id="@+id/Btn_duedate"
+                android:text="Duedate"
+                style="@style/button2"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <Button
+            android:onClick="Edit_borrowedbook"
+            android:id="@+id/btn_edit_borrowedbook"
+            android:layout_marginTop="10dp"
+            android:text="edit"
+            style="@style/button2"/>
+        <Button
+            android:onClick="Cancle_edit_borrowedbook"
+            android:id="@+id/btn_Cancle_ADD_borrowedbook"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:text="Cancle"
+            style="@style/button2"/>
+    </LinearLayout>
+
+</ScrollView>

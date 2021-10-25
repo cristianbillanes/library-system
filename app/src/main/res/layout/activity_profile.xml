@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile">
+    <TextView
+        android:id="@+id/profile_id"
+        android:text="ID"
+        android:layout_gravity="right"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/profile_name"
+        android:text="Name"
+        android:textSize="30dp"
+        android:textColor="@color/blue"
+        style="@style/textview"/>
+    <TextView
+        android:id="@+id/profile_email"
+        android:text="Email"
+        android:textSize="20dp"
+        style="@style/textview"/>
+    <Button
+        android:onClick="Edit_Profile"
+        android:layout_marginTop="50dp"
+        android:text="Edit Profile"
+        android:backgroundTint="@color/purple_200"
+        style="@style/profile_button"/>
+    <Button
+        android:onClick="back_to_home_page"
+        android:layout_marginTop="30dp"
+        android:text="Back"
+        android:backgroundTint="@color/teal_700"
+        style="@style/profile_button"/>
+    <Button
+        android:onClick="log_out"
+        android:layout_marginTop="30dp"
+        android:text="Log-out Account"
+        android:backgroundTint="@color/red"
+        style="@style/profile_button"/>
+</LinearLayout>

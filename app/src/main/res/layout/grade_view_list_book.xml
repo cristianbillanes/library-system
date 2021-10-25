@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/book_grade_view_list"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/teal_200"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp">
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:background="@color/grey"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:visibility="gone"
+                android:text="ID: "
+                style="@style/textview3"/>
+            <TextView
+                android:text="Title: "
+                style="@style/textview3"/>
+            <TextView
+                android:text="Author: "
+                style="@style/textview3"/>
+            <TextView
+                android:text="ISBN: "
+                style="@style/textview3"/>
+            <TextView
+                android:text="Purchdate: "
+                style="@style/textview3"/>
+            <TextView
+                android:text="Publishyear: "
+                style="@style/textview3"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/book_gradeview_id"
+                android:visibility="gone"
+                android:text="id "
+                style="@style/textview4"/>
+            <TextView
+                android:id="@+id/book_gradeview_title"
+                android:text="title "
+                style="@style/textview4"/>
+            <TextView
+                android:id="@+id/book_gradeview_author"
+                android:text="author "
+                style="@style/textview4"/>
+            <TextView
+                android:id="@+id/book_gradeview_isbn"
+                android:text="isbn "
+                style="@style/textview4"/>
+            <TextView
+                android:id="@+id/book_gradeview_purchdate"
+                android:text="purchdate "
+                style="@style/textview4"/>
+            <TextView
+                android:id="@+id/book_gradeview_publishyear"
+                android:text="Publishyear "
+                style="@style/textview4"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

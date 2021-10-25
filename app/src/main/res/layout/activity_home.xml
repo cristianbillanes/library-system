@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Home">
+    <FrameLayout
+        android:id="@+id/top_fram"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/upper_text"
+            android:text="Home"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/ColorPrimary2"
+            style="@style/textview"/>
+        <ImageView
+            android:layout_gravity="right"
+            android:id="@+id/home_profile_button"
+            android:layout_margin="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/profile"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_below="@id/top_fram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/middle_text"
+            android:text="Welcome!"
+            android:textSize="50dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/ColorPrimary2"
+            style="@style/textview"/>
+        <TextView
+            android:text="to the libray system"
+            android:textSize="25dp"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/black"
+            style="@style/textview"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/Home"
+            style="@style/button_slide"
+            android:layout_weight="1"
+            android:text="Home" />
+
+        <Button
+            android:onClick="HOME_BOOK_VIEW"
+            style="@style/button_slide"
+            android:layout_weight="1"
+            android:text="View" />
+
+        <Button
+            android:onClick="HOME_ADD_BOOK"
+            style="@style/button_slide"
+            android:layout_weight="1"
+            android:text="Add" />
+
+
+    </LinearLayout>
+</RelativeLayout>

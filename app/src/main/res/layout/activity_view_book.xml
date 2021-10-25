@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewBook">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="250dp"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/view_Search"
+                    android:text=""
+                    android:hint="Search"
+                    android:inputType="text"
+                    style="@style/editext"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:onClick="btn_Research"
+                android:id="@+id/Btn_view_search"
+                android:layout_alignParentRight="true"
+                android:text="Search"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/txt_spinner_value_book"
+            android:text="author"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/spinner_view_book"
+            android:textSize="20dp"
+            android:scrollbarSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <GridView
+            android:id="@+id/Book_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:verticalSpacing="2dp"
+            android:horizontalSpacing="2dp"
+            android:numColumns="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:onClick="View_Back_TO_HOME"
+            android:id="@+id/Home"
+            style="@style/button_slide"
+            android:layout_weight="1"
+            android:text="Home" />
+
+        <Button
+            android:id="@+id/Book"
+            style="@style/button_slide"
+            android:layout_weight="1"
+            android:text="Book" />
+
+        <Button
+            android:onClick="View_ADD_BOOK"
+            style="@style/button_slide"
+            android:layout_weight="1"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/Scan"
+            style="@style/button_slide"
+            android:layout_weight="1"
+            android:text="Scan" />
+
+    </LinearLayout>
+
+</RelativeLayout>
